@@ -878,15 +878,18 @@ a{
 
 /* Feature */
 .feature{
-    margin-bottom: 4rem;
+    margin: 12rem 0;
 }
 
+.feature:first-of-type{
+    margin-top: 6rem;
+}
 .feature__image{
     width: 100%;
 }
 
 .feature__title{
-    margin-top: 12px;
+    margin: 1rem 0;
 }
 
 .feature.grid{
