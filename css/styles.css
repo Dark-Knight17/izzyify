@@ -877,6 +877,10 @@ a{
 }
 
 /* Feature */
+.feature{
+    margin-bottom: 4rem;
+}
+
 .feature__image{
     width: 100%;
 }
@@ -889,11 +893,12 @@ a{
    gap: 4rem 10rem;
 }
 
-.feature__content{
-    margin-top: 3.5rem;
-}
 
 @media screen and (min-width:768px) {
+    .feature{
+        margin-bottom: 12rem;
+    }
+
     .feature--reverse .feature__image{
         order: -1; 
     }
