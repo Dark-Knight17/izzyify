@@ -127,7 +127,7 @@ a{
 .list{
     list-style: none;
     padding-left: 0;
-    color: var(--color-headings);
+   
 }
 
 .list--inline .list__item{
@@ -196,7 +196,7 @@ a{
     font-size: 1.8rem;
     font-weight: 600;
     margin: 1rem 0;
-    padding: 2rem 3rem;
+    padding: 2rem 3vw;
     text-align: center;
     text-transform: uppercase;
     transition: all 0.3s ease;
@@ -284,6 +284,7 @@ a{
     border: 0;
     flex: 1;
     padding: 1.5rem 2rem;
+    width: 0;
 }
 
 .input-group .btn{
@@ -772,8 +773,9 @@ a{
 }
 
 .block-domain__prices{
+    color: var(--color-headings);
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,6rem);
     font-size: 1.5rem;
     font-weight: 600;
@@ -872,6 +874,29 @@ a{
     }
 
 
+}
+
+/* Feature */
+.feature__image{
+    width: 100%;
+}
+
+.feature__title{
+    margin-top: 12px;
+}
+
+.feature.grid{
+   gap: 4rem 10rem;
+}
+
+.feature__content{
+    margin-top: 3.5rem;
+}
+
+@media screen and (min-width:768px) {
+    .feature--reverse .feature__image{
+        order: -1; 
+    }
 }
 
 
