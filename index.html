@@ -2,8 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0
-    maximum-scale=1, user-scalable=no"" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,10 +11,11 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <title>Izzyify - Go online for Just $9</title>
   </head>
   <body>
-    <!-- <header>
+    <header>
     <nav class="nav collapsible">
       <a class="nav__brand" href="/"><img src="images/logo.svg" alt=""></a>
       <svg class="icon icon--white nav__toggler">
@@ -51,7 +51,7 @@
       </picture>
     </div>
   </section>
-  <section class="block container block-domain">
+  <section class="block container block-domain" data-aos="fade-up">
     <header class="block__header">
       <h2>Starting at $9 per month</h2>
       <p>
@@ -159,7 +159,7 @@
         </p>
       </div>
       <div class="grid grid--1x2 feature ">
-        <div class="feature__content">
+        <div class="feature__content" data-aos="fade-right">
           <span class="icon-container">
             <svg class="icon icon--primary">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -173,7 +173,7 @@
           </p>
           <a class="link-arrow" href="#">Learn more</a>
         </div>
-        <img class="feature__image" src="images/easy.jpg" alt="" />
+        <img class="feature__image" data-aos="zoom-in-left" src="images/easy.jpg" alt="" />
       </div>
 
       <div class="grid grid--1x2 feature  feature--reverse">
@@ -227,7 +227,7 @@
         </div>
         <img class="feature__image" src="images/support.jpg" alt="" />
       </div>
-    </section> -->
+    </section>
     <section class="block block--dark block--skewed-right showcase">
       <div class="block__header">
         <h2>User-Friendly Control Panel</h2>
@@ -297,6 +297,165 @@
         </ul>
       </div>
     </section>
+    <section class="block">
+      <header class="block__header">
+        <h2>What our Customers are Saying</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+          omnis error voluptate quisquam, animi harum laboriosam ratione, nisi
+          distinctio explicabo, delectus quam facere est quod odio maxime? Sint,
+          reiciendis cum.
+        </p>
+      </header>
+      <div class="container">
+        <div class="card testimonial">
+          <div class="grid grid--1x2">
+            <div class="testimonial__image">
+              <span class="icon-container icon-container--accent icon--white">
+                <svg class="icon icon--small">
+                  <use xlink:href="images/sprite.svg#quotes"></use>
+                </svg>
+              </span>
+              <img
+                src="images/testimonial.jpg"
+                alt="A happy, smiling customer"
+              />
+            </div>
+            <blockquote class="quote">
+              <p class="quote__text">
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+                ipsum suspendisse ultrices gravida. Risus commodo viverra
+                maecenas accumsan lacus vel facilisis.
+              </p>
+              <footer>
+                <div class="media">
+                  <div class="media__image quote__line">
+                    <svg class="icon">
+                      <use xlink:href="images/sprite.svg#line"></use>
+                    </svg>
+                  </div>
+                  <div class="media__body">
+                    <h3 class="media__title quote__author">Jhone Lumeo</h3>
+                    <p class="media__message quote__organisation">
+                      ABC Company
+                    </p>
+                  </div>
+                </div>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="block footer">
+      <div class="callout callout--primary">
+        <div class="grid grid--1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready to Get Started?</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+              nesciunt temporibus at ex. Dolorem esse, et nihil magni molestias
+              tenetur dolore. Consectetur, nihil? Dolorem quas inventore ipsa
+              praesentium ducimus quis!
+            </p>
+          </div>
+          <a href="#" class="btn btn--secondary btn--streched">Get Started</a>
+        </div>
+      </div>
+      <div class="container grid grid--1x5">
+        <div class="collapsible collapsible--expanded footer__collapsible">
+          <header class="collapsible__header footer__collapsible-header">
+            <h2 class="collapsible__heading footer__heading">Products</h2>
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="images/chevron.svg"
+              alt=""
+            />
+          </header>
+          <div class="collapsible__content footer__collapsible-content">
+            <ul class="list">
+              <li class="list__item"><a href="">WordPress Hosting</a></li>
+              <li class="list__item">
+                <a href="">Free automated WordPress</a>
+              </li>
+              <li class="list__item"><a href="">Migrations</a></li>
+              <li class="list__item"><a href="">Domain Names</a></li>
+              <li class="list__item"><a href="">Monthly Web Hosting</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapsible footer__collapsible">
+          <header class="collapsible__header footer__collapsible-header">
+            <h2 class="collapsible__heading footer__heading">company</h2>
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="images/chevron.svg"
+              alt=""
+            />
+          </header>
+          <div class="collapsible__content footer__collapsible-content">
+            <ul class="list">
+              <li class="list__item"><a href="">About</a></li>
+              <li class="list__item"><a href="">Affliaties</a></li>
+              <li class="list__item"><a href="">Blog</a></li>
+              <li class="list__item"><a href="">Careers</a></li>
+              <li class="list__item"><a href="">Community</a></li>
+              <li class="list__item"><a href="">News</a></li>
+              <li class="list__item"><a href="">Green Hosting</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapsible footer__collapsible">
+          <header class="collapsible__header footer__collapsible-header">
+            <h2 class="collapsible__heading footer__heading">support</h2>
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="images/chevron.svg"
+              alt=""
+            />
+          </header>
+          <div class="collapsible__content footer__collapsible-content">
+            <ul class="list">
+              <li class="list__item"><a href="">Contact</a></li>
+              <li class="list__item"><a href="">Knowledge base</a></li>
+              <li class="list__item"><a href="">forums</a></li>
+              <li class="list__item"><a href="">system status</a></li>
+              <li class="list__item"><a href="">Web Hosting</a></li>
+              <li class="list__item"><a href="">dream compute</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapsible footer__collapsible">
+          <header class="collapsible__header footer__collapsible-header">
+            <h2 class="collapsible__heading footer__heading">domains</h2>
+            <img
+              class="icon icon--white collapsible__chevron"
+              src="images/chevron.svg"
+              alt=""
+            />
+          </header>
+          <div class="collapsible__content footer__collapsible-content">
+            <ul class="list">
+              <li class="list__item"><a href="">Domain checker</a></li>
+              <li class="list__item"><a href="">domain transfer</a></li>
+              <li class="list__item"><a href="">free domain</a></li>
+              <li class="list__item"><a href="">XYZ domain</a></li>
+              <li class="list__item"><a href="">cheap SSL certificate</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-brand">
+          <img src="images/logo.svg" alt="" />
+          <p>Copyright &copy; 2025 mosh</p>
+        </div>
+      </div>
+    </section>
+
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
